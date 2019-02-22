@@ -1,0 +1,13 @@
+
+ var arr = [["first","1"],["second","2","as"],["third","3"]]
+
+for (var i = 0; i < arr.length; i++) {
+    
+    for (let j = 0; j < arr[i].length; j++) {
+         
+          console.log(arr[i][j]);
+          
+        
+    }
+    
+}

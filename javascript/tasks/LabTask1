@@ -1,0 +1,8 @@
+Lab Tasks:
+
+1) write a javascript program that gets temperature from user in celsius and convert it into      Fahrenheit using the formula F = 9/5 * C + 32.
+
+2) write a javascript program that gets person height from user in inches and convert it into      centimeters using the formula heighInCentimeters = 2.54 * height.
+
+3) write a program that inputs marks of three subjects.if the average of marks is more than 80,it displays message "you are above standard, Admission Granted!".
+

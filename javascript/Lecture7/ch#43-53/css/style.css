@@ -1,0 +1,24 @@
+* {
+    text-align: center;
+    margin: 20px;
+}
+
+div{
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+button{
+    margin: 10px;
+}
+
+.img{
+    width: 100px;
+}
+
+.applyBorder{
+    border: 30px solid black;
+}

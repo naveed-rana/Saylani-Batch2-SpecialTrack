@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>Input from user by using form and display into user by using p tag</h1>
+    <hr />
+    <div >
+        <h2>Input</h2>
+        <form onsubmit="onSubmitHandler(event)">
+
+            <input id="name" type="text" placeholder="Enter your Name">
+            <br />
+            <input id="email" type="email" placeholder="Enter your Email">
+            <br />
+            <input id="city" type="text" placeholder="Enter your City">
+            <br />
+            <textarea id="address" cols="30" rows="10">Enter your address here!</textarea>
+            <br />
+            <input type="submit" value="submit">
+
+
+        </form>
+    </div>
+    <div>
+        <h2>Output</h2>
+        <p id="result">
+            
+        </p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

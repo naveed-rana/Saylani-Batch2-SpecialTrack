@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<h1 id="some">JavaScript Chapters 43-53</h1>
+
+<!-- inline javascript -->
+<a href="#" onClick="alert('Hi');">inline</a>
+    
+<br>
+
+<!-- internal javascript -->
+<a href="#" onClick="names();">internal javascript</a>
+
+
+<!-- button on click event -->
+<br/>
+<input type="button" value="button" onClick="alert('Hello world!');">
+<br>
+
+<!-- img on click event -->
+<img width="150" src="./images/javascript.jpg" onClick="alert('Hello world!');">
+
+
+<!-- onMouseOver and onMouseOut events -->
+<img width="150" 
+src="./images/javascript.jpg"
+onMouseOver="src='./images/after.png'" onmouseout="src='./images/javascript.jpg'">
+
+<h1 onmouseover="this.style.color='red';">Lorem ipsum dolor silt amet.</h1>
+
+<!-- onfocus and onblur events for inputs -->
+
+Email:<br>
+<input type="text"  
+       size="30"
+       onFocus="this.style.backgroundColor='yellow';"
+       onBlur="this.style.backgroundColor='white';"
+       >
+
+ <!-- Reading field values by using getElementbyid-->
+
+ <!-- Setting field values?  let's look at example -->
+<form>
+    <input type="text" id="code" placeholder=" enter city code"   onblur="findCityByCityCode()">
+    <br>
+    <input readonly type="text" placeholder="city name" id="cityname">
+</form>
+<!-- Setting field values?  let's look at example -->
+
+
+
+<!-- pera onclick example-->
+<p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+ </p>
+
+
+<!-- image hidden example -->
+<img  class="img" src="./images/javascript.jpg" id="ugly" onClick="makeInvisible();">
+
+   <script>
+// function
+     function names() {
+         document.getElementById('some').innerHTML = 'some';
+         
+           }
+
+//findCityByCityCode
+function findCityByCityCode() {
+
+    var code = document.getElementById('code').value;
+    if(code === '1'){
+        document.getElementById('cityname').value = 'Karachi';
+    }
+   else if(code === '2'){
+        document.getElementById('cityname').value = 'Lahore';
+    }
+   else if(code === '3'){
+        document.getElementById('cityname').value = 'Gujranwalla';
+    }
+    else{
+       
+        document.getElementById('cityname').value = 'enter valid city code';
+    
+    }
+    
+}
+
+//pera handler
+
+function expandLoris() {
+
+ var expandedParagraph = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. Slow lorises have a toxic bite, a rare trait among mammals.";
+
+document.getElementById("slowLoris").innerHTML = expandedParagraph;
+ }
+
+
+
+
+
+   </script>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

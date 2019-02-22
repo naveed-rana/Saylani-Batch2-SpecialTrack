@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+}
+
+input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+  }
+  #spoiler{
+    margin-top: 20px;
+    display: none;
+  }

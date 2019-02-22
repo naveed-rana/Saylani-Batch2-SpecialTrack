@@ -1,0 +1,7 @@
+lab tasks:
+ 
+1) write a program that displays counting from 1 to 1o using javascript loop.
+   note> display your result into html list.
+
+2) write a program that inputs a number from user and display the factorial of that number using the loop.
+   note> display your result into P tag and get input through form.

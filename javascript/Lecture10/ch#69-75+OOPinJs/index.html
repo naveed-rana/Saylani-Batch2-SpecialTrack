@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<h1 id="some">JavaScript Chapters 69-75 + OOP in Js</h1>
+
+<h3>CRUD JS</h3>
+
+
+<!-- Example -->
+
+<!-- Input -->
+<form action="javascript:void(0);" onsubmit="addItem()"> 
+    <input type="text" id="name" placeholder="New country">
+    <input type="text" id="flag" placeholder="New Flag Color">
+    <input type="submit" value="Add">
+</form>
+
+
+<!-- Edit -->
+<div id="spoiler" role="aria-hidden">
+    <form action="javascript:void(0);" method="POST" id="saveEdit" onsubmit="saveEdit()" >
+
+      <input type="text" id="edit-name">
+      <input type="text" id="edit-flag">
+
+      <input type="submit" value="update" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+    </form>
+  </div>
+
+
+<!-- Fetch -->
+<p id="counter"></p>
+<table>
+ <tr>
+   <th>Name</th>
+   <th>FlagColor</th>
+ </tr>
+ <tbody id="countries">
+ </tbody>
+</table>
+
+
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+lab tasks:
+
+1) write a program that inputs a number and displays whether it is even or odd.
+   please get input through form and display result into h1 tag.
+
+2) write a program that inputs a number and displays whether it is divisible by 3  or  not.
+   please get input through form and display result into h3 tag.
